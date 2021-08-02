@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fa-check,.fa-trash{
+    pointer-events: none;
+
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.todo{
+    width: 38rem;
+    display: flex;
+    background: chartreuse;
+    align-items: center;
+    margin-top: 15px;
+    padding-left: 7px;
+    justify-content: center;
+    border-radius: 3px;
+
+
+    
+}
+.todo li{
+    width: 35rem;
+    list-style: none;
+    font-size: 20px;
+    padding-left: 15px;
+    /* margin-right: 3px; */
+}
+.completed-btn,.delBtn{
+    width: 30px;
+    height: 30px;
+}
+.todo-btn i{
+    height: 30px;
+}
+form{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position:absolute;
+    top:3rem;
+}
+.todo-input{
+    height: 36px;
+    width: 40rem;
+    padding: 0 7px;
+    margin-right: 0;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    opacity: 0.7;
+    padding-left: 15px;
+}
+.todo-btn{
+    /* margin: 0; */
+    line-height: 35px;
+    width: 35px;
+    height: 40px;
+    margin-left: -1px;
+    font-size: 20px;   
+}
+.todo-btn i{
+    height: 30px;
+}
+.todo-container{
+    height: 500px;
+    /* background: rgba(230, 189, 100, 0.6); */
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+}
+.time{
+    font-size:1.5rem;
+    font-family: sans-serif;
+    background:cornflowerblue;
+    padding: 10px;
+    border-radius: 15px;
+    border-bottom: 3px solid black;
+    opacity: 0.9;
+}
+@media (max-width:500px) {
+    html{
+        font-size: 50%;
+    }
+    .todo-input{
+        width: 35rem;
+    }
+}
+@media (max-width:1000px) {
+    html{
+        font-size: 60%;
+    }
+    .todo-input{
+        width: 35rem;
+    }
+}
